@@ -15,6 +15,8 @@
 		FD79B8091C702FF20048B718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD79B8071C702FF20048B718 /* LaunchScreen.storyboard */; };
 		FD79B8141C702FF20048B718 /* SelfieBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79B8131C702FF20048B718 /* SelfieBookTests.swift */; };
 		FD79B81F1C702FF20048B718 /* SelfieBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79B81E1C702FF20048B718 /* SelfieBookUITests.swift */; };
+		FD79B82D1C727DE00048B718 /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD79B82C1C727DE00048B718 /* CameraOverlayView.xib */; };
+		FD79B82F1C727F2B0048B718 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD79B82E1C727F2B0048B718 /* CameraOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FD79B81A1C702FF20048B718 /* SelfieBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD79B81E1C702FF20048B718 /* SelfieBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieBookUITests.swift; sourceTree = "<group>"; };
 		FD79B8201C702FF20048B718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD79B82C1C727DE00048B718 /* CameraOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraOverlayView.xib; sourceTree = "<group>"; };
+		FD79B82E1C727F2B0048B718 /* CameraOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				FD79B7FB1C702FF10048B718 /* AppDelegate.swift */,
 				FD79B7FD1C702FF10048B718 /* ViewController.swift */,
 				FD79B7FF1C702FF20048B718 /* Main.storyboard */,
+				FD79B82C1C727DE00048B718 /* CameraOverlayView.xib */,
+				FD79B82E1C727F2B0048B718 /* CameraOverlayView.swift */,
 				FD79B8051C702FF20048B718 /* Assets.xcassets */,
 				FD79B8071C702FF20048B718 /* LaunchScreen.storyboard */,
 				FD79B80A1C702FF20048B718 /* Info.plist */,
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD79B82D1C727DE00048B718 /* CameraOverlayView.xib in Resources */,
 				FD79B8091C702FF20048B718 /* LaunchScreen.storyboard in Resources */,
 				FD79B8061C702FF20048B718 /* Assets.xcassets in Resources */,
 				FD79B8011C702FF20048B718 /* Main.storyboard in Resources */,
@@ -262,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD79B82F1C727F2B0048B718 /* CameraOverlayView.swift in Sources */,
 				FD79B7FE1C702FF10048B718 /* ViewController.swift in Sources */,
 				FD79B7FC1C702FF10048B718 /* AppDelegate.swift in Sources */,
 				FD79B8041C702FF20048B718 /* SelfieBook.xcdatamodeld in Sources */,
@@ -491,6 +499,7 @@
 				FD79B8251C702FF20048B718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD79B8261C702FF20048B718 /* Build configuration list for PBXNativeTarget "SelfieBookTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +508,7 @@
 				FD79B8281C702FF20048B718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD79B8291C702FF20048B718 /* Build configuration list for PBXNativeTarget "SelfieBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +517,7 @@
 				FD79B82B1C702FF20048B718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

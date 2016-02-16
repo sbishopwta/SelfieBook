@@ -8,41 +8,38 @@
 
 import UIKit
 import MobileCoreServices
+import AVFoundation
 
-class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
+    lazy var cameraOverlayView: CameraOverlayView = {
+        let view = NSBundle.mainBundle().loadNibNamed("CameraOverlayView", owner: nil, options: nil).first as! CameraOverlayView
+        view.frame = UIScreen.mainScreen().bounds
+        return view;
+    }()
+    
+    let captureSession = AVCaptureSession()
+    let faceDetector: CIDetector = CIDetector()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    private func captureSetup() {
+        
+    }
 
 
     @IBAction func launchFacetrackingCamera() {
-        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
-            UIImagePickerController.availableMediaTypesForSourceType(UIImagePickerControllerSourceType.Camera)
-            let cameraController = UIImagePickerController()
-            cameraController.mediaTypes = [kUTTypeLivePhoto as String, kUTTypeImage as String]
-            cameraController.delegate = self
-            cameraController.sourceType = UIImagePickerControllerSourceType.Camera
-            self.presentViewController(cameraController, animated: true, completion: nil)
-        }
+        
+        
+        captureSession.startRunning()
+        
+        
     }
     
-    
-    //MARK - UIImagePickerController Delegate
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
 
-        } else {
-
-        }
-        picker.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        picker.dismissViewControllerAnimated(true, completion: nil)
-    }
     
     
 }
